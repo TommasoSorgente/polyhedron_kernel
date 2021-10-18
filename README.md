@@ -4,7 +4,7 @@ Supplemental material for the paper "A Geometric Approach for Computing the Kern
 
 ## Content
 The repository contains the code for the computation of the geometric kernel of a polyhedron and the dataset considered in the paper for its testing.
-- the folder "datasets" contains a .zip file for each type of meshes: _complex models_, _flex refinements_, _laser-chess_ refinements, _tet10_, _tet20_, _tet30_ and _voro_. Each of them contains a number of .off meshes.
+- the folder "datasets" contains a .zip file for each type of meshes: _complex models_, _flex_ refinements, _laser-chess_ refinements, _tet10_, _tet20_, _tet30_ and _voro_. Each of them contains a number of .off meshes.
 - kernel.pro is an example of Qt project for compiling main.cpp. The code is written using the library cinolib (https://github.com/mlivesu/cinolib), which therefore needs to be included.
 - main.cpp contains a basic usage example of the code: it takes a .off file as input, computes the kernel, saves it into another file and prints out the elapsed time.
 - polyhedron_kernel.h/.cpp contains the kernel algorithm described in the paper.
