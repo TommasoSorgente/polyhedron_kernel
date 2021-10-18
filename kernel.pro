@@ -8,7 +8,7 @@ DEFINES     += CINOLIB_USES_QT
 INCLUDEPATH += $$PWD/../cinolib/include
 INCLUDEPATH += $$PWD/../cinolib/external/eigen
 
-DEFINES     += DATA_PATH=\\\"$$PWD/\\\"
+DEFINES     += DATA_PATH=\\\"$$PWD/../datasets/\\\"
 
 SOURCES += \
     main.cpp \
