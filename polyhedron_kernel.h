@@ -26,7 +26,7 @@ public:
   void compute(const std::vector<vec3d> &verts,
                const std::vector<std::vector<uint>> &faces,
                const std::vector<vec3d> &normals,
-               const bool &random_faces = false);
+               const bool &shuffle = false);
 
 private:
   double TOLL = 1e-8;

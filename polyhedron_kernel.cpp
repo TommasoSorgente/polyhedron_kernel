@@ -31,14 +31,14 @@ CINO_INLINE
 void PolyhedronKernel::compute(const std::vector<vec3d> &verts,
                                const std::vector<std::vector<uint>> &faces,
                                const std::vector<vec3d> &normals,
-                               const bool &random_faces) {
+                               const bool &shuffle) {
   if (kernel_verts.empty() || kernel_faces.empty()) {
     std::cout << "ERROR: initialize kernel before computing." << std::endl;
     return;
   }
   std::vector<uint> faces_ids(faces.size());
   std::iota(faces_ids.begin(), faces_ids.end(), 0);
-  if (random_faces) {
+  if (shuffle) { // optional shuffle mode
     std::random_device rd;
     std::mt19937 g(rd());
     std::shuffle(faces_ids.begin(), faces_ids.end(), g);
@@ -67,7 +67,6 @@ void PolyhedronKernel::compute(const std::vector<vec3d> &verts,
     if (kernel_verts.size() < 3 || kernel_faces.size() < 3) {
       kernel_verts.clear();
       kernel_faces.clear();
-      std::cout << "empty kernel" << std::endl;
       return;
     }
   }

@@ -2,7 +2,7 @@
 #define EXTENDEDPLANE_H
 
 // extended version of cinolib::plane, with the additional information of three
-// points contained in the plane, useful for shewchuck predicates
+// points contained in the plane, useful for Shewchuck predicates
 
 #include <cinolib/geometry/vec_mat.h>
 #include <iostream>

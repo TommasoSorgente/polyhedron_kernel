@@ -13,7 +13,7 @@ INCLUDEPATH += $$PWD/cinolib/external/eigen
 
 # this can be commented if not needed
 DEFINES     += CINOLIB_USES_EXACT_PREDICATES
-SOURCES     += /Users/tommy/QT-projects/libs/cinolib/external/predicates/shewchuk.c
+SOURCES     += $$PWD/cinolib/external/predicates/shewchuk.c
 
 DEFINES     += DATA_PATH=\\\"$$PWD/../datasets/\\\"
 SOURCES     += main.cpp
