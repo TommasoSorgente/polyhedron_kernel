@@ -15,13 +15,14 @@ The repository contains the code for the computation of the geometric kernel of 
 If you use the code or one or more datasets in your academic projects, please consider citing the original paper using the following BibTeX entry:
 
 ```
-@misc{sorgente2022polyhedron,
-      title={Polyhedron Kernel Computation Using a Geometric Approach}, 
-      author={Tommaso Sorgente and Silvia Biasotti and Michela Spagnuolo},
-      year={2022},
-      eprint={2202.06625},
-      archivePrefix={arXiv},
-      primaryClass={cs.CG}
+@article{sorgente2022polyhedron,
+  title={Polyhedron kernel computation using a geometric approach},
+  author={Sorgente, Tommaso and Biasotti, Silvia and Spagnuolo, Michela},
+  journal={Computers \& Graphics},
+  volume={105},
+  pages={94--104},
+  year={2022},
+  publisher={Elsevier}
 }
 ```
 
