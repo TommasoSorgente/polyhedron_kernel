@@ -7,7 +7,7 @@ using namespace cinolib;
 int main(int argc, char *argv[]) {
   std::string input =
       (argc == 2) ? std::string(argv[1])
-                  : std::string(DATA_PATH) + "complex_models/rt4_arm.off";
+                  : std::string(DATA_PATH) + "Complex_Models/rt4_arm.off";
   std::cout << "Input: " << input << std::endl;
   Polygonmesh<> m(input.c_str());
 
